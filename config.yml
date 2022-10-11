@@ -1,0 +1,28 @@
+# Data configuration
+ami_set: /gpfswork/rech/cjx/uaf42iq/multichannel-dia/PyanNetlike/
+noise: /gpfswork/rech/cjx/uaf42iq/datasets/free-sound
+
+sample_rate: 16000
+# Number of channels in the simulated room (must match IR dataset and >= 2)
+num_channels: 1
+# Number of speakers for diarization AND separation (<= num_spatial_sources)
+num_speakers: 4
+# Duration of an input chunk in seconds
+chunk_duration: 5.0
+noise_min_snr: 5.0
+noise_max_snr: 15.0
+noise_probability: 0.9
+train_workers: 4
+val_workers: 4
+test_workers: 4
+fft_size: 512
+hidden_size: 128
+num_layers: 4
+dropout: 0.5
+ssep_loss_target_channel: spec_mean
+learning_rate: 0.001
+batch_size: 32
+epochs: 300
+loss_weight: 0.5
+channels_choice: first
+step: 0.5
