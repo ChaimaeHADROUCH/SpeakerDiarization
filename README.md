@@ -1,17 +1,17 @@
 
 
 # Branches
-| Branches | Model   | DATA    |Features| STFT's parameters(window_size & stride)| Model name(in notion) |
-| :---:   | :---: | :---: |:---: | :---:| :---:|
-| PyanNet | PyanNet   | SingleChannel | ---| --- | ---|
-| PyanNetlike | PyanNet   | SingleChannel |---|--- |SincNet (PyanNet)|
-| StereoNet_Single_Channel | STFT+DataNormalization+LSTM+FeedForwards  | SingleChannel | Magnitudes|window_size=512, stride=256|STFT+DataNormalization|
-| StereoNet_Multi_Channel | STFT+DataNormalization+LSTM+FeedForwards   | MultiChannel| Magnitude+IPD|window_size=512, stride=256 |STFT+DataNormalization|
-| StereoNet_Multi_Channel_ILD| STFT+DataNormalization+LSTM+FeedForwards   | MultiChannel|Magnitude+IPD+ILD| window_size=512, stride=256|STFT+DataNormalization|
-| StereoNet_CNN_SingleChannel | STFT+2CNN+LSTM+FeedForwards   | SingleChannel |Magnitudes| window_size=128, stride=32|HybridSincNet(STFT+2CNN)|
-| StereoNet_CNN_MultiChannel | STFT+2CNN+LSTM+FeedForwards   | MultiChannel|Magnitude+IPD|window_size=128, stride=32 |HybridSincNet(STFT+2CNN)|
-| StereoNet_CNN_MultiChannel_ILD | STFT+2CNN+LSTM+FeedForwards   | MultiChannel|Magnitude+IPD+ILD| window_size=128, stride=32|HybridSincNet(STFT+2CNN)|
-| StereoNet_SincNet | SincNet+LSTM+FeedForwards  |MultiChannel|---|---|SincNet (Multichannel)|
+| Branches | Model   | DATA    |Features| STFT's parameters(window_size & stride)|
+| :---:   | :---: | :---: |:---: | :---:|
+| PyanNet | PyanNet   | SingleChannel | ---| --- | 
+| PyanNetlike | PyanNet   | SingleChannel |---|--- |
+| StereoNet_Single_Channel | STFT+DataNormalization+LSTM+FeedForwards  | SingleChannel | Magnitudes|window_size=512, stride=256|
+| StereoNet_Multi_Channel | STFT+DataNormalization+LSTM+FeedForwards   | MultiChannel| Magnitude+IPD|window_size=512, stride=256 |
+| StereoNet_Multi_Channel_ILD| STFT+DataNormalization+LSTM+FeedForwards   | MultiChannel|Magnitude+IPD+ILD| window_size=512, stride=256|
+| StereoNet_CNN_SingleChannel | STFT+2CNN+LSTM+FeedForwards   | SingleChannel |Magnitudes| window_size=128, stride=32|
+| StereoNet_CNN_MultiChannel | STFT+2CNN+LSTM+FeedForwards   | MultiChannel|Magnitude+IPD|window_size=128, stride=32 |
+| StereoNet_CNN_MultiChannel_ILD | STFT+2CNN+LSTM+FeedForwards   | MultiChannel|Magnitude+IPD+ILD| window_size=128, stride=32|
+| StereoNet_SincNet | SincNet+LSTM+FeedForwards  |MultiChannel|---|---|
 
 ### The difference between PyanNet and PyanNetlike:
 
