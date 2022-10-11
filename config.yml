@@ -1,11 +1,11 @@
 # Data configuration
-ami_set: /gpfswork/rech/cjx/uaf42iq/multichannel-dia/exp4_v4/Exp4/StereoNet49
-noise: /gpfswork/rech/cjx/uaf42iq/datasets/free-sound/
+ami_set: /home/ubuntu/Multichannel_dia/multichannel-dia
+noise: /home/ubuntu/Multichannel_dia/datasets/free-sound/
 ckpt_path : C:/projects/experiment_1/checkpoints/epoch=236-Segmentation-AMISpeakerDiarizationonly_words-DiarizationErrorRate=0.184057.ckpt
-json: /gpfswork/rech/cjx/uaf42iq/multichannel-dia/exp4_v4/Exp4/StereoNet49/stats_mono.json
+json: /home/ubuntu/Multichannel_dia/multichannel-dia/stats_stereo.json
 sample_rate: 16000
 # Number of channels in the simulated room (must match IR dataset and >= 2)
-num_channels: 1
+num_channels: 2
 # Number of speakers for diarization AND separation (<= num_spatial_sources)
 num_speakers: 4
 num_sources: 4
