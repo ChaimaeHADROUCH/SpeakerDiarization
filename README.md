@@ -20,31 +20,7 @@ PyanNet :
 
 PyanNetLike :
 - code also uses the pyannote-audio framework but with more flexibility, we use an instance of a subclass of IterableDataset `SpeechChunkSampler` for training set, and `ValTestDataset` for evaluation sets that implements the \_\_iter\_\_() protocol, and represents an iterable over data samples, the data samples are the audio chunks of duration 5s that are read randomly from the audio. For loss function, we use just **BinaryCrossEntropy**.
- 
-# Download Data from S3
 
-| DATA |  Description  | URL on S3    |
-| :---:   | :---: | :---: |
-| data_AMI_channel1 | First channel of Array1 of AMI dataset   | s3://ava-ai-eu/public_datasets/AMI/data_AMI_channel1/ | 
-| data_AMI_Array1 | The 8 channels of Array 1 of AMI datasets   | s3://ava-ai-eu/public_datasets/AMI/data_AMI_Array1/ |
-| free-sound | Noise that we added to the training set   | s3://ava-ai-eu/public_datasets/musan/noise/free-sound/ |
-| lists | Contains the list of identifiers of the files in the training set. |s3://ava-ai-eu/public_datasets/AMI/lists/|
-| only_words  | Contains the reference speaker diarization using RTTM format |s3://ava-ai-eu/public_datasets/AMI/only_words/|
-| uems   | Describes the annotated regions using UEM format |s3://ava-ai-eu/public_datasets/AMI/uems/|
-
-# Download pretrained models from S3
-
-| Pretrained model |  The corresponding branch  | URL on S3    |
-| :---:   | :---: | :---: |
-| PyanNet |   PyanNet | s3://ava-ai-eu/trained_models/PyanNet/| 
-| PyanNetlike | PyanNetLike   | s3://ava-ai-eu/trained_models/PyanNetlike/ |
-| StereoNet_Single_Channel |  StereoNet_Single_Channel  | s3://ava-ai-eu/trained_models/StereoNet_Single_Channel/ |
-| StereoNet_Multi_Channel | StereoNet_Multi_Channel |s3://ava-ai-eu/trained_models/StereoNet_Multi_Channel/|
-| StereoNet_Multichannel_ILD | StereoNet_Multi_Channel_ILD|s3://ava-ai-eu/trained_models/StereoNet_Multichannel_ILD/|
-| StereoNet_CNN_SingleChannel | StereoNet_CNN_SingleChannel |s3://ava-ai-eu/trained_models/StereoNet_CNN_SingleChannel/|
-| StereoNet_CNN_MultiChannel |StereoNet_CNN_MultiChannel |s3://ava-ai-eu/trained_models/StereoNet_CNN_MultiChannel/|
-| StereoNet_CNN_MultiChannel_ILD | StereoNet_CNN_MultiChannel_ILD |s3://ava-ai-eu/trained_models/StereoNet_CNN_MultiChannel_ILD/|
-| StereoNet_SincNet | StereoNet_SincNet|s3://ava-ai-eu/trained_models/StereoNet_SincNet/|
 
 
 # Install environment
