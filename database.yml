@@ -1,0 +1,23 @@
+Databases:
+  # tell pyannote.database where to find AMI wav files.
+  # {uri} is a placeholder for the session name (eg. ES2004c).
+  # you might need to update this line to fit your own setup.
+
+  AMI: /home/ubuntu/Multichannel_dia/datasets/data_AMI_Array1/{uri}.Array1.wav
+
+Protocols:
+  AMI:
+    SpeakerDiarization:
+      only_words:
+        train:
+            uri: /home/ubuntu/Multichannel_dia/datasets/lists/train.meetings.txt
+            annotation : /home/ubuntu/Multichannel_dia/datasets/only_words/rttms/train/{uri}.rttm
+            annotated: /home/ubuntu/Multichannel_dia/datasets/uems/train/{uri}.uem
+        development:
+            uri: /home/ubuntu/Multichannel_dia/datasets/lists/dev.meetings.txt
+            annotation: /home/ubuntu/Multichannel_dia/datasets/only_words/rttms/dev/{uri}.rttm
+            annotated: /home/ubuntu/Multichannel_dia/datasets/uems/dev/{uri}.uem
+        test:
+            uri: /home/ubuntu/Multichannel_dia/datasets/lists/test.meetings.txt
+            annotation: /home/ubuntu/Multichannel_dia/datasets/only_words/rttms/test/{uri}.rttm
+            annotated: /home/ubuntu/Multichannel_dia/datasets/uems/test/{uri}.uem
